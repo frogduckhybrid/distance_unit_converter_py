@@ -1,0 +1,4 @@
+* Python Unit Distance Converter - FrogduckHybrid
+
+** This project contains functions for converting a distance from one unit to another
+** Supports Centimetres, Inches, Feet, Yards, Metres, Kilometres, Miles and Nautical Miles
