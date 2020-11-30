@@ -83,10 +83,8 @@ conversions = {
 
 # Lambdas
 convert = lambda x, input_str, result_str: x * conversions[input_str][result_str]
-print(convert(5, 'cm', 'in'))
 
 convert_and_print = lambda value, input_str, result_str: print(value, input_str, "=", convert(value, input_str, result_str), result_str)
-convert_and_print(51, 'mi', 'km')
 
 # Interactive function
 def convert_interactive():
