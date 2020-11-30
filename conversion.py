@@ -92,16 +92,16 @@ convert_and_print(51, 'mi', 'km')
 
 # Interactive function
 def convert_interactive():
-    print("Enter Units to convert from?")
-    input_str = input(str(list(conversions.keys())) + ": ")
 
-    print("Enter Value in ", end = "")
-    input_value = int(input(input_str + ": "))
+    unit_list = str(list(conversions.keys()))
 
-    print("enter unit to convert ", input_value, input_str, " to?")
-    result_str = input(str(list(conversions.keys())) + ": ")
+    input_str = input("Enters Units to convert from " + unit_list + ": ")
 
-    convert_and_print(input_value, input_str, result_str);
+    input_val = int(input( "Enter Value in " + input_str + ": "))
+
+    result_str = input("Enter Unit to convert "+ str(input_val) + input_str + " to " + unit_list + ": ")
+
+    convert_and_print(input_val, input_str, result_str);
 
 
 convert_interactive()
