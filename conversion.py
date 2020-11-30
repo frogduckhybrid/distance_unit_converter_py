@@ -91,13 +91,12 @@ def convert_interactive():
 
     unit_list = str(list(conversions.keys()))
 
-    input_str = input("Enters Units to convert from " + unit_list + ": ")
+    input_str = input("Enters unit to convert from " + unit_list + ": ")
 
     input_val = int(input( "Enter Value in " + input_str + ": "))
 
-    result_str = input("Enter Unit to convert "+ str(input_val) + input_str + " to " + unit_list + ": ")
+    result_str = input("Enter unit to convert "+ str(input_val) + input_str + " to " + unit_list + ": ")
 
     convert_and_print(input_val, input_str, result_str);
-
 
 convert_interactive()
