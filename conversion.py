@@ -1,5 +1,3 @@
-# Convert Distance units program - John Gormley Frogduckhybrid
-# Centimetre
 conversions = {
     'cm' : {
         'cm' : 1,
