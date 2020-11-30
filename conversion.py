@@ -84,7 +84,7 @@ conversions = {
 # Lambdas
 convert = lambda x, input_str, result_str: x * conversions[input_str][result_str]
 
-convert_and_print = lambda value, input_str, result_str: print(value, input_str, "=", convert(value, input_str, result_str), result_str)
+convert_and_print = lambda x, input_str, result_str: print(x, input_str, "=", convert(x, input_str, result_str), result_str)
 
 # Interactive function
 def convert_interactive():
