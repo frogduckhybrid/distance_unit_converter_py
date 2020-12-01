@@ -10,15 +10,15 @@ convert_and_print = lambda x, input_str, result_str: print(x, input_str, "=", co
 # Interactive function
 def convert_interactive():
 
-    unit_list = str(list(conversions.keys()))
+    unit_list = ', '.join(conversions.keys())
 
-    input_str = input("Enters unit to convert from " + unit_list + ": ")
+    input_str = input("Enters unit to convert from [ " + unit_list + " ]: ")
 
     input_val = int(input( "Enter Value in " + input_str + ": "))
 
-    inner_unit_list = str(list(conversions[input_str].keys()))
+    inner_unit_list = ', '.join(conversions[input_str].keys())
 
-    result_str = input("Enter unit to convert "+ str(input_val) + input_str + " to " + inner_unit_list + ": ")
+    result_str = input("Enter unit to convert "+ str(input_val) + input_str + " to [ " + inner_unit_list + " ]: ")
 
     convert_and_print(input_val, input_str, result_str);
 
