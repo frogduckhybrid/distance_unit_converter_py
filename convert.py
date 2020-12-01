@@ -4,8 +4,6 @@ conversions = json.load(open("conversions.json"))
 
 # Lambdas
 convert = lambda x, input_str, result_str: x * conversions[input_str][result_str]
-print(convert(5, "cm", "in"))
-print(convert(5, "ft", "in"))
 
 convert_and_print = lambda x, input_str, result_str: print(x, input_str, "=", convert(x, input_str, result_str), result_str)
 
