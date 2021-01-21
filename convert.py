@@ -20,6 +20,6 @@ def convert_interactive():
 
     result_str = input("Enter unit to convert "+ str(input_val) + input_str + " to [ " + inner_unit_list + " ]: ")
 
-    convert_and_print(input_val, input_str, result_str);
+    convert_and_print(input_val, input_str, result_str)
 
 convert_interactive()
