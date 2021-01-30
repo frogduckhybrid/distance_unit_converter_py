@@ -12,7 +12,7 @@ def convert_interactive():
 
     unit_list = ', '.join(conversions.keys())
 
-    input_str = input("Enters unit to convert from [ " + unit_list + " ]: ")
+    input_str = input("Enter unit to convert from [ " + unit_list + " ]: ")
 
     input_val = int(input( "Enter Value in " + input_str + ": "))
 
